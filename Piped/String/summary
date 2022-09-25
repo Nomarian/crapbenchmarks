@@ -1,0 +1,12 @@
+Summary
+  './test.sh|./grep.sh' ran
+    1.52 ± 0.25 times faster than './test.sh|./rg.sh'
+    3.16 ± 0.85 times faster than './test.sh|./grep.sed'
+    5.29 ± 0.84 times faster than './test.sh|./grep-jit.lua'
+    6.00 ± 0.96 times faster than './test.sh|./grep.pl'
+    7.34 ± 1.18 times faster than './test.sh|./grep.awk'
+   12.35 ± 1.95 times faster than './test.sh|./grep-full.lua'
+   12.60 ± 2.06 times faster than './test.sh|./grep-line.lua'
+   12.84 ± 2.07 times faster than './test.sh|./grep.lua'
+   13.31 ± 2.35 times faster than './test.sh|./grep2.lua'
+   45.86 ± 7.21 times faster than './test.sh|./grep.tcl'

@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+
+sub f {}
+for (my $i = 0; $i <= 100000; $i++) {
+	f();
+}

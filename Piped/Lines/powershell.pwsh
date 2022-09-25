@@ -1,0 +1,8 @@
+#!/home/nmz/Src/powershell/pwsh -File
+
+; Write-Host "$line"
+; Where-Object {"$line" -EQ "5000"}
+
+do
+; $line = Read-Host
+while

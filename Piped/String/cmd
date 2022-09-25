@@ -1,0 +1,1 @@
+; hyperfine -w 2 -M 5 "./test.sh|./grep2.lua" "./test.sh|./grep.awk" "./test.sh|./grep-full.lua" "./test.sh|./grep-jit.lua" "./test.sh|./grep-line.lua" "./test.sh|./grep.lua" "./test.sh|./grep.pl" "./test.sh|./grep.sed" "./test.sh|./grep.sh" "./test.sh|./grep.tcl" "./test.sh|./rg.sh" --export-csv summary.csv --export-markdown summary.md

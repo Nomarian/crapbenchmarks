@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+def f():
+	pass
+
+for i in range(1000000):
+	f()

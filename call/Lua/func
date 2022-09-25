@@ -1,0 +1,4 @@
+#!/usr/bin/lua5.3
+
+local f = function () end
+for i=1,100000 do f() end
