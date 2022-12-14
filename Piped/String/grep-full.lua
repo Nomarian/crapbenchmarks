@@ -1,4 +1,4 @@
-#!/usr/bin/lua5.3
+#!/usr/bin/lua5.4
 
 io.stdin:setvbuf"full"
 local print = io.write

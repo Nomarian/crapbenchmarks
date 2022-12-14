@@ -1,0 +1,56 @@
+Benchmark 1: ./test.sh|./grep2.lua
+  Time (mean ± σ):      76.2 ms ±   1.4 ms    [User: 71.8 ms, System: 9.0 ms]
+  Range (min … max):    75.3 ms …  78.5 ms    5 runs
+ 
+Benchmark 2: ./test.sh|./grep.awk
+  Time (mean ± σ):      72.0 ms ±   1.4 ms    [User: 73.6 ms, System: 4.4 ms]
+  Range (min … max):    70.6 ms …  74.2 ms    5 runs
+ 
+Benchmark 3: ./test.sh|./grep-full.lua
+  Time (mean ± σ):      68.2 ms ±   1.0 ms    [User: 71.5 ms, System: 3.3 ms]
+  Range (min … max):    67.3 ms …  69.4 ms    5 runs
+ 
+Benchmark 4: ./test.sh|./grep-jit.lua
+  Time (mean ± σ):      57.4 ms ±   1.4 ms    [User: 57.6 ms, System: 5.3 ms]
+  Range (min … max):    55.3 ms …  59.1 ms    5 runs
+ 
+Benchmark 5: ./test.sh|./grep-line.lua
+  Time (mean ± σ):      68.7 ms ±   1.4 ms    [User: 66.1 ms, System: 8.3 ms]
+  Range (min … max):    66.3 ms …  69.7 ms    5 runs
+ 
+Benchmark 6: ./test.sh|./grep.lua
+  Time (mean ± σ):      68.5 ms ±   1.9 ms    [User: 65.7 ms, System: 8.5 ms]
+  Range (min … max):    66.5 ms …  71.4 ms    5 runs
+ 
+Benchmark 7: ./test.sh|./grep.pl
+  Time (mean ± σ):      65.4 ms ±   1.6 ms    [User: 64.5 ms, System: 7.1 ms]
+  Range (min … max):    63.7 ms …  67.4 ms    5 runs
+ 
+Benchmark 8: ./test.sh|./grep.sed
+  Time (mean ± σ):      27.7 ms ±   1.0 ms    [User: 29.5 ms, System: 4.8 ms]
+  Range (min … max):    26.8 ms …  29.1 ms    5 runs
+ 
+Benchmark 9: ./test.sh|./grep.sh
+  Time (mean ± σ):       6.6 ms ±   0.4 ms    [User: 6.8 ms, System: 4.4 ms]
+  Range (min … max):     6.2 ms …   7.3 ms    5 runs
+ 
+Benchmark 10: ./test.sh|./grep.tcl
+  Time (mean ± σ):     423.3 ms ±  15.0 ms    [User: 418.6 ms, System: 7.4 ms]
+  Range (min … max):   412.6 ms … 449.0 ms    5 runs
+ 
+Benchmark 11: ./test.sh|./rg.sh
+  Time (mean ± σ):      13.9 ms ±   2.0 ms    [User: 10.9 ms, System: 8.3 ms]
+  Range (min … max):    12.8 ms …  17.4 ms    5 runs
+ 
+Summary
+  './test.sh|./grep.sh' ran
+    2.11 ± 0.33 times faster than './test.sh|./rg.sh'
+    4.21 ± 0.32 times faster than './test.sh|./grep.sed'
+    8.71 ± 0.62 times faster than './test.sh|./grep-jit.lua'
+    9.92 ± 0.71 times faster than './test.sh|./grep.pl'
+   10.34 ± 0.71 times faster than './test.sh|./grep-full.lua'
+   10.39 ± 0.76 times faster than './test.sh|./grep.lua'
+   10.41 ± 0.73 times faster than './test.sh|./grep-line.lua'
+   10.92 ± 0.77 times faster than './test.sh|./grep.awk'
+   11.56 ± 0.80 times faster than './test.sh|./grep2.lua'
+   64.19 ± 4.88 times faster than './test.sh|./grep.tcl'
